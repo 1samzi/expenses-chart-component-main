@@ -1,0 +1,149 @@
+* {
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  background-color: hsl(27, 66%, 92%);
+}
+
+h2, h3, h4 {
+  color: hsl(25, 47%, 15%);
+  font-weight: 700;
+}
+
+p, .small-text {
+  color: hsl(28, 10%, 53%);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.container {
+  width: 630px;
+  padding: 3% 6%;
+}
+@media (max-width: 768px) and (min-width: 390px) {
+  .container {
+    width: 380px;
+  }
+}
+@media (max-width: 390px) {
+  .container {
+    width: 100%;
+  }
+}
+.container .card {
+  border-width: 0;
+}
+.container .title-section {
+  padding: 3% 5%;
+  color: white;
+  background-color: hsl(10, 79%, 65%);
+  display: inline-block;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.container .title-section .title-header {
+  display: inline-block;
+  font-weight: 700;
+  margin: 0;
+  font-size: 2em;
+}
+.container .title-section .title-balance {
+  color: white;
+  margin: 0;
+  font-size: 18px;
+}
+.container .title-section img {
+  position: relative;
+  float: right;
+  bottom: 10px;
+}
+.container .spending-section {
+  padding: 3% 6%;
+  border-radius: 10px;
+  align-items: center;
+}
+.container .spending-section .row {
+  text-align: center;
+  width: 100%;
+  align-items: flex-end;
+  display: flex;
+}
+.container .spending-section .graph-container {
+  margin-bottom: 10px;
+}
+.container .spending-section .small-text {
+  bottom: 0;
+  display: inline-block;
+  font-size: 12px;
+}
+.container .spending-section .col-1 {
+  width: 11%;
+  padding: 0;
+}
+.container .spending-section .graph {
+  display: inline-block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 8px;
+  transition: 0.2s;
+  position: relative;
+  bottom: 0;
+}
+.container .spending-section .graph:hover {
+  cursor: pointer;
+  background-color: hsl(186, 34%, 60%);
+}
+.container .spending-section .spending-title {
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 1.5em;
+}
+.container .spending-section .stat-text {
+  background-color: hsl(25, 47%, 15%);
+  text-align: center;
+  font-size: 0.8em;
+  color: white;
+  padding: 2px 5px;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
+  display: inline-block;
+}
+.container .card-bottom {
+  margin: 20px 0 20px auto;
+  width: 100%;
+  text-align: left;
+  display: inline-block;
+}
+.container .card-bottom .right-card-bottom {
+  text-align: right;
+  float: right;
+}
+.container .card-bottom .left-card-bottom {
+  float: left;
+}
+.container .card-bottom .large-header-bottom {
+  font-size: 2em;
+}
+.container .card-bottom .small-header-bottom {
+  line-height: 1em;
+  font-size: 0.8em;
+  margin-top: 2em;
+}
+.container .card-bottom h4, .container .card-bottom h3, .container .card-bottom p {
+  padding: 0;
+  margin: 0;
+}
+.container .card-bottom p {
+  font-size: 0.8em;
+}/*# sourceMappingURL=styles.css.map */

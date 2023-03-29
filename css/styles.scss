@@ -1,0 +1,196 @@
+// # Front-end Style Guide
+
+// ## Layout
+
+// The designs were created to the following widths:
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ## Colors
+
+// ### Primary
+
+// - Soft red: hsl(10, 79%, 65%)
+// - Cyan: hsl(186, 34%, 60%)
+
+// ### Neutral
+
+// - dark-brown: hsl(25, 47%, 15%)
+// - medium-brown: hsl(28, 10%, 53%)
+// - cream: hsl(27, 66%, 92%)
+// - very-pale-orange: hsl(33, 100%, 98%)
+
+// ## Typography
+
+// ### Body Copy
+
+// - Font size: 18px
+
+// ### Font
+
+// - Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans)
+// - Weights: 400, 700
+$soft-red:hsl(10, 79%, 65%);
+$cyan: hsl(186, 34%, 60%);
+$dark-brown: hsl(25, 47%, 15%);
+$medium-brown: hsl(28, 10%, 53%);
+$cream: hsl(27, 66%, 92%);
+$very-pale-orange: hsl(33, 100%, 98%);
+
+*{
+    font-family: 'DM Sans', sans-serif;
+}
+
+body{
+    background-color: $cream;
+}
+h2, h3, h4{
+    color:$dark-brown;
+    font-weight: 700;
+}
+p, .small-text{
+    color:$medium-brown;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.container{
+    width: 630px;
+    padding: 3% 6%;
+    
+    @media (max-width: 768px) and (min-width: 390px) {
+        width: 380px;
+      }
+      @media (max-width: 390px) {
+        width: 100%;
+      }
+    .card{
+        border-width: 0;
+    }
+    .title-section{
+        padding: 3% 5%;
+        color: white;
+        background-color: $soft-red;
+        display: inline-block;
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        .title-header{
+            display: inline-block;
+            font-weight: 700;
+            margin: 0;
+            font-size: 2em;
+
+        }
+        .title-balance{
+            color: white;
+            margin: 0;
+            font-size: 18px;
+        }
+        img{
+            position: relative;
+            float: right;
+            bottom: 10px;
+        }
+        
+    }
+    .spending-section{
+        padding: 3% 6%;
+        border-radius: 10px;
+        align-items: center;
+        .row{
+            text-align: center;
+            width:100%;
+            align-items: flex-end;
+            display: flex;
+        }
+        
+        .graph-container{
+            margin-bottom: 10px;
+        }
+        .small-text{
+            
+            bottom: 0;
+            display: inline-block;
+            font-size:12px;
+        }
+        .col-1{
+            width: 11%;
+            padding: 0;
+        }
+        .graph{
+            display: inline-block;
+            width:100%;
+            padding-left: 0;
+            padding-right: 0;
+            background-color: $soft-red;
+            border-radius: 8px;
+            transition:.2s;
+            
+            
+            position: relative;
+            bottom: 0;
+        }        
+        
+        .graph:hover{
+            cursor: pointer;
+            background-color:$cyan;
+        }
+        .spending-title{
+            display: inline-block;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            font-size: 1.5em;
+        }
+        .stat-text{
+            background-color: $dark-brown;
+            text-align: center;
+            font-size: .8em;
+            color: white;
+            padding: 2px 5px;
+            z-index: 1;
+            
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            
+            border-radius: 3px;
+            display: inline-block;
+        }
+    }
+    .card-bottom{
+        
+        margin: 20px 0 20px auto;
+        width: 100%;
+        text-align: left;
+        display: inline-block;
+        
+        .right-card-bottom{
+            text-align: right;
+            float: right;
+        }
+        .left-card-bottom{
+            float: left;
+        }
+        .large-header-bottom{
+            font-size: 2em;
+        }
+        .small-header-bottom{
+            line-height: 1em;
+            font-size: .8em;
+            margin-top: 2em;
+        }
+        h4, h3, p{
+            
+            padding: 0;
+            margin: 0;
+        }
+        p{
+            font-size: .8em;
+        }
+    }
+}

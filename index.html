@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  
+  <!-- Bootstrap Scripts -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- fonts  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="title-section card card-title">
+      <p class="title-balance">My balance</p>
+      
+      <h1 class="title-header">$921.48</h1> 
+      <img src="images/logo.svg" alt="logo-img" width="50px">
+    </div>
+    
+    <div class="container-fluid spending-section card">
+      <h2 class = "spending-title">Spending - Last 7 days</h2>
+      <div class="row justify-content-between graph-container">
+
+        <div class="col-1">
+          <span class="mon stat-text hidden"></span>
+          <div class = "graph" id = "mon"></div>
+          <span class="small-text">mon</span> 
+        </div>
+        <div class="col-1">
+          <span class="tue stat-text hidden"></span>
+          <div class = "graph"  id = "tue"></div>
+          <span class="small-text">tue</span> 
+        </div>
+        <div class="col-1">
+          <span class="wed stat-text hidden"></span>
+          <div class = "graph"  id = "wed"></div>
+          <span class="small-text">wed</span> 
+        </div>
+        <div class="col-1">
+          <span class="thu stat-text hidden"></span>
+          <div class = "graph"  id = "thu"></div>
+          <span class="small-text">thu</span> 
+        </div>
+        <div class="col-1">
+          <span class="fri stat-text hidden"></span>
+          <div class = "graph"  id = "fri"></div>
+          <span class="small-text">fri</span> 
+        </div>
+        <div class="col-1">
+          <span class="sat stat-text hidden"></span>
+          <div class = "graph"  id = "sat"></div>
+          <span class="small-text">sat</span> 
+        </div>
+        <div class="col-1">
+          <span class="sun stat-text hidden"></span>
+          <div class = "graph"  id = "sun"></div>
+          <span class="small-text">sun</span> 
+        </div>
+
+
+      </div>
+      <div class="card-bottom">
+        <div class="left-card-bottom">
+          <p>Total this month</p> 
+          <h3 class="large-header-bottom">$478.33</h3> 
+        </div>
+        
+        <div class="right-card-bottom">
+          <h3 class = "small-header-bottom">+2.4%</h3>
+        
+          <p>from last month</p> 
+        </div>
+        
+  
+      </div>
+    </div>
+    
+  </div>
+  
+
+  
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#" target="_blank">Samuel Mbasela</a>.
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="javascript/index.js"></script>
+</body>
+</html>
